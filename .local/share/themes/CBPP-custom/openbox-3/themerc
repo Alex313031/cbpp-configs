@@ -1,8 +1,22 @@
-!! Theme: CBPP-dark
-!! Description: A dark theme for CBPP
-!! Author: Ben Young <computermouth@crunchbangplusplus.org>
+!! Theme: CBPP-custom
+!! Description: A custom dark theme for CBPP
+!! Author: Alex313031 <https://github.com/Alex313031>
+!! Prev Author: Ben Young <computermouth@crunchbangplusplus.org>
 !! Web: https://crunchbangplusplus.org/
 !! -------------------------------------------------------
+
+!! Global width/height settings
+padding.width: 2
+padding.height: 2
+window.handle.width: 4
+window.client.padding.width: 0
+menu.overlap.x: -6
+
+!! Border width/height and color settings
+border.width: 1
+border.color: #B5B5B5
+menu.border.width: 1
+menu.border.color: #B5B5B5
 
 !! Menu settings
 
@@ -25,70 +39,129 @@ menu.items.active.bg.colorTo:#6B6B6B
 menu.items.active.text.color: #FFFFFF
 menu.bullet.selected.image.color: #FFFFFF
 
-!! focused window settings
+!! <-- Focused window settings -->
 
-window.active.title.bg: flat vertical bevel1
-window.active.title.bg.color: #2c2c2c
-!!window.active.title.bg.colorTo: #B5B5B5
+window.active.title.bg: flat gradient vertical bevel1
+window.active.title.bg.color: #3d3d3d
+window.active.title.bg.colorTo: #2c2c2c
 window.active.title.separator.color: #B5B5B5
 
-window.active.handle.bg: flat vertical bevel1
+window.active.handle.bg: flat gradient vertical bevel1
 window.active.handle.bg.color: #2c2c2c
-!!window.active.handle.bg.colorTo: #D9D7D6
+window.active.handle.bg.colorTo: #2c2c2c
 
-window.active.grip.bg: parentrelative
+window.active.grip.bg: flat gradient vertical bevel1
+window.active.grip.bg.color: #2c2c2c
+window.active.grip.bg.colorTo: #2c2c2c
 
 window.active.label.bg: parentrelative
-window.active.label.text.color: #c7c7c7
+window.active.label.text.color: #E6E6E6
 
-window.*.button.*.bg: parentrelative
-window.active.button.*.image.color: #c7c7c7
-window.active.button.*.pressed.image.color: #111111
-window.active.button.disabled.image.color: #c7c7c7
+!! Focused button settings
 
-!! unfocused window settings
+!! unpressed
+window.active.button.unpressed.bg: flat gradient vertical bevel1
+window.active.button.unpressed.bg.color: #3d3d3d
+window.active.button.unpressed.bg.colorTo: #2c2c2c
+!!window.active.button.unpressed.bg.border.color: #B5B5B5
 
-window.inactive.title.bg: flat vertical bevel1
-window.inactive.title.bg.color: #444444
-!!window.inactive.title.bg.colorTo: #B5B5B5
+!! pressed
+window.active.button.pressed.bg: flat gradient vertical bevel1
+window.active.button.pressed.bg.color: #1c1c1c
+window.active.button.pressed.bg.colorTo: #1c1c1c
+!!window.active.button.pressed.bg.border.color: #B5B5B5
+
+!! hovered
+window.active.button.hover.bg: flat gradient vertical bevel1
+window.active.button.hover.bg.color: #4e4e4e
+window.active.button.hover.bg.colorTo: #4e4e4e
+
+!! disabled
+window.active.button.disabled.bg: flat gradient vertical bevel1
+window.active.button.disabled.bg.color: #111111
+window.active.button.disabled.bg.colorTo: #111111
+
+!! button image
+window.active.button.*.image.color: #E6E6E6
+window.active.button.*.pressed.image.color: #d5d5d5
+window.active.button.disabled.image.color: #ACACAC
+
+!! highlight/shadow
+!!window.active.button.*.bg.hightlight: 128
+!!window.active.button.*.bg.shadow: 64
+
+!! <-- END Focused window settings -->
+
+!! <-- Unfocused window settings -->
+
+window.inactive.title.bg: flat gradient vertical bevel1
+window.inactive.title.bg.color: #555555
+window.inactive.title.bg.colorTo: #444444
 window.inactive.title.separator.color: #B5B5B5
 
-window.inactive.handle.bg: flat vertical bevel1
+window.inactive.handle.bg: flat gradient vertical bevel1
 window.inactive.handle.bg.color: #181818
-!!window.inactive.handle.bg.colorTo: #D9D7D6
+window.inactive.handle.bg.colorTo: #181818
 
-window.inactive.grip.bg: parentrelative
+window.inactive.grip.bg: flat gradient vertical bevel1
+window.inactive.grip.bg.color: #181818
+window.inactive.grip.bg.colorTo: #181818
 
 window.inactive.label.bg: parentrelative
 window.inactive.label.text.color: #c7c7c7
 
-window.inactive.button.*.image.color: #c7c7c7
+!! Unfocused button settings
 
-!! Global width settings
-border.Width: 1
-padding.width: 1
-window.handle.width: 4
-window.client.padding.width: 0
-menu.overlap.x: -6
+!! unpressed
+window.inactive.button.unpressed.bg: flat gradient vertical bevel1
+window.inactive.button.unpressed.bg.color: #555555
+window.inactive.button.unpressed.bg.colorTo: #444444
+!!window.inactive.button.unpressed.bg.border.color: #B5B5B5
 
-!! Miscellaneous settings
-border.color: #B7B4B2
-menu.border.color: #3C3D3E
+!! pressed
+window.inactive.button.pressed.bg: flat vertical bevel1
+window.inactive.button.pressed.bg.color: #333333
+window.inactive.button.pressed.bg.colorTo: #333333
+!!window.inactive.button.pressed.bg.border.color: #B5B5B5
+
+!! hovered
+window.inactive.button.hover.bg: flat gradient vertical bevel1
+window.inactive.button.hover.bg.color: #666666
+window.inactive.button.hover.bg.colorTo: #666666
+
+!! disabled
+window.inactive.button.disabled.bg: flat gradient vertical bevel1
+window.inactive.button.disabled.bg.color: #111111
+window.inactive.button.disabled.bg.colorTo: #111111
+
+!! button image
+window.inactive.button.*.image.color: #E6E6E6
+window.inactive.button.*.pressed.image.color: #d5d5d5
+window.inactive.button.disabled.image.color: #ACACAC
+
+!! highlight/shadow
+!!window.active.button.*.bg.hightlight: 128
+!!window.active.button.*.bg.shadow: 64
+
+!! <-- END Unfocused window settings -->
 
 !! OSD
+osd.border.width: 1
 osd.bg: flat gradient vertical bevel1
-osd.bg.color: #000000
-osd.bg.colorTo: #000000
-osd.label.bg: parentrelative
+osd.bg.color: #3d3d3d
+osd.bg.colorTo: #2c2c2c
+osd.label.bg: flat solid
+osd.label.bg.color: #525252
 osd.hilight.bg: flat solid
 osd.hilight.bg.color: #525252
 osd.unhilight.bg: flat solid
 osd.unhilight.bg.color: #D9D7D6
-osd.label.text.color: #1C1C1C
+osd.label.text.color: #E6E6E6
+osd.label.text.font: shadow=y:shadowtint=70
 
 !! font me!
 window.label.text.justify: center
-window.active.label.text.font:shadow=y:shadowtint=60:shadowoffset=1
-window.inactive.label.text.font:shadow=y:shadowtint=60:shadowoffset=1
-menu.items.font:
-menu.title.text.font:shadow=n:shadowtint=70
+window.active.label.text.font: shadow=y:shadowtint=70:shadowoffset=1
+window.inactive.label.text.font: shadow=y:shadowtint=70:shadowoffset=1
+menu.items.font: shadow=y:shadowtint=70
+menu.title.text.font: shadow=y:shadowtint=70

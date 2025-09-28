@@ -41,7 +41,7 @@
   </placement>
   <theme>
     <name>CBPP-custom</name>
-    <titleLayout>DSLIMC</titleLayout>
+    <titleLayout>DSNLIMC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -53,7 +53,7 @@
       D: omnipresent (on all desktops).
   -->
     <keepBorder>yes</keepBorder>
-    <animateIconify>no</animateIconify>
+    <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Liberation Sans</name>
       <size>10</size>
@@ -118,7 +118,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>2</number>
+    <number>1</number>
     <firstdesk>1</firstdesk>
     <names>
       <!-- set names up here if you want to, like this:
@@ -462,7 +462,7 @@
   <mouse>
     <dragThreshold>8</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
-    <doubleClickTime>200</doubleClickTime>
+    <doubleClickTime>400</doubleClickTime>
     <!-- in milliseconds (1000 = 1 second) -->
     <screenEdgeWarpTime>400</screenEdgeWarpTime>
     <!-- Time before changing desktops when the pointer touches the edge of the
@@ -532,10 +532,20 @@
         <action name="Raise"/>
       </mousebind>
       <mousebind button="Left" action="Drag">
+        <action name="if">
+          <maximized>yes</maximized>
+          <then>
+            <action name="Unmaximize"/>
+            <action name="MoveResizeTo">
+              <y>0</y>
+            </action>
+          </then>
+        </action>
+        <action name="Move"/>
         <action name="Move"/>
       </mousebind>
       <mousebind button="Left" action="DoubleClick">
-        <action name="ToggleMaximize"/>
+        <action name="ToggleMaximizeFull"/>
       </mousebind>
       <mousebind button="Middle" action="Press">
         <action name="Lower"/>

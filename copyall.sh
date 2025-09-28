@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Copyright (c) 2025 Alex313031
+
+## Test out settings first
+openbox --reconfigure &&
+tint2restart &&
+
+## Copy files to this repo
 cp -r -v ~/.config/jgmenu/* ./.config/jgmenu/ &&
 
 cp -r -v ~/.config/openbox/* ./.config/openbox/ &&

@@ -1,0 +1,94 @@
+!! Theme: CBPP-dark
+!! Description: A dark theme for CBPP
+!! Author: Ben Young <computermouth@crunchbangplusplus.org>
+!! Web: https://crunchbangplusplus.org/
+!! -------------------------------------------------------
+
+!! Menu settings
+
+menu.title.bg: flat gradient vertical bevel1
+menu.title.bg.color: #33393A
+menu.title.bg.colorTo: #33393A
+menu.title.text.color: #E6E6E6
+menu.title.text.justify: right
+
+menu.separator.color: #4C5153
+
+menu.items.bg: flat solid
+menu.items.bg.color: #33393A
+menu.items.text.color: #E6E6E6
+menu.items.disabled.text.color: #8A8A8A
+
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #6B6B6B
+menu.items.active.bg.colorTo:#6B6B6B
+menu.items.active.text.color: #FFFFFF
+menu.bullet.selected.image.color: #FFFFFF
+
+!! focused window settings
+
+window.active.title.bg: flat vertical bevel1
+window.active.title.bg.color: #2c2c2c
+!!window.active.title.bg.colorTo: #B5B5B5
+window.active.title.separator.color: #B5B5B5
+
+window.active.handle.bg: flat vertical bevel1
+window.active.handle.bg.color: #2c2c2c
+!!window.active.handle.bg.colorTo: #D9D7D6
+
+window.active.grip.bg: parentrelative
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #c7c7c7
+
+window.*.button.*.bg: parentrelative
+window.active.button.*.image.color: #c7c7c7
+window.active.button.*.pressed.image.color: #111111
+window.active.button.disabled.image.color: #c7c7c7
+
+!! unfocused window settings
+
+window.inactive.title.bg: flat vertical bevel1
+window.inactive.title.bg.color: #444444
+!!window.inactive.title.bg.colorTo: #B5B5B5
+window.inactive.title.separator.color: #B5B5B5
+
+window.inactive.handle.bg: flat vertical bevel1
+window.inactive.handle.bg.color: #181818
+!!window.inactive.handle.bg.colorTo: #D9D7D6
+
+window.inactive.grip.bg: parentrelative
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #c7c7c7
+
+window.inactive.button.*.image.color: #c7c7c7
+
+!! Global width settings
+border.Width: 1
+padding.width: 1
+window.handle.width: 4
+window.client.padding.width: 0
+menu.overlap.x: -6
+
+!! Miscellaneous settings
+border.color: #B7B4B2
+menu.border.color: #3C3D3E
+
+!! OSD
+osd.bg: flat gradient vertical bevel1
+osd.bg.color: #000000
+osd.bg.colorTo: #000000
+osd.label.bg: parentrelative
+osd.hilight.bg: flat solid
+osd.hilight.bg.color: #525252
+osd.unhilight.bg: flat solid
+osd.unhilight.bg.color: #D9D7D6
+osd.label.text.color: #1C1C1C
+
+!! font me!
+window.label.text.justify: center
+window.active.label.text.font:shadow=y:shadowtint=60:shadowoffset=1
+window.inactive.label.text.font:shadow=y:shadowtint=60:shadowoffset=1
+menu.items.font:
+menu.title.text.font:shadow=n:shadowtint=70

@@ -257,7 +257,7 @@ ac_disconnected_cmd =
 #-------------------------------------
 # Button 1
 button = new
-button_icon = /path/to/favourite_icon.png
+button_icon = ~/.local/share/themes/CBPP-custom/jgmenu/jgmenu.svg
 button_text = 
 button_lclick_command = jgmenu_run
 button_rclick_command = 

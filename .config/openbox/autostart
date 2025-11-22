@@ -31,7 +31,12 @@ hsetroot -solid "#2E3436" &
 nitrogen --restore &
 cbpp-compositor --start &
 tint2 &
+
+# Turn on NumLock at login
 numlockx &
+
+# Run ksuperkey so we can use Super key to open menus
+ksuperkey &
 
 ## Start nm-applet for systray
 nm-applet &
